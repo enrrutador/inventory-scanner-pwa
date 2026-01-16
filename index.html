@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Inventory Scanner PWA</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="src/css/styles.css" />
+
+  <!-- Meta básicos PWA (preparado, aunque todavía no usemos service worker) -->
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="description" content="Escáner de inventario simple en formato PWA" />
+</head>
+
+<body>
+  <header class="app-header">
+    <h1>Inventory Scanner</h1>
+    <p>Gestión básica de inventario</p>
+  </header>
+
+  <main class="app-container">
+    <!-- Entrada manual / escaneo -->
+    <section class="scanner-section">
+      <label for="codeInput">Código de producto</label>
+      <input
+        type="text"
+        id="codeInput"
+        placeholder="Escanear o escribir código"
+        autocomplete="off"
+      />
+      <button id="addButton">Agregar</button>
+    </section>
+
+    <!-- Listado -->
+    <section class="list-section">
+      <h2>Productos registrados</h2>
+      <ul id="inventoryList"></ul>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>Inventory Scanner PWA — MVP</small>
+  </footer>
+
+  <!-- Lógica -->
+  <script src="src/js/app.js"></script>
+</body>
+</html>
