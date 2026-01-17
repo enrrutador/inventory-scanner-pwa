@@ -1,1 +1,20 @@
+{
+  "short_name": "PDA Scanner",
+  "name": "Inventory Scanner Professional PWA",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1126/1126600.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "./",
+  "theme_color": "#CCFF00",
+  "description": "Terminal PDA profesional para gestión de inventarios offline.",
+  "orientation": "portrait"
+}
 
